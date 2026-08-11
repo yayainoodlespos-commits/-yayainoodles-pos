@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POS ก๋วยเตี๋ยวหมูต้มยำ</title>
 
     <!-- PWA: หน้านี้คือหน้าเว็บระดับบนสุดจริงๆ (ไม่ใช่ Apps Script ที่ถูก iframe sandbox)
@@ -26,6 +26,7 @@
         iframe {
             width: 100vw;
             height: 100vh;
+            height: 100dvh; /* หน่วยความสูงแบบไดนามิก แก้ปัญหา iOS standalone mode คำนวณ 100vh ผิดจนล้นจอ */
             border: none;
             display: block;
         }
